@@ -1,0 +1,122 @@
+[
+  {
+    "id": "gemini-wrapper",
+    "name": "Gemini Wrapper",
+    "url": "http://gemini-wrapper:5010",
+    "description": "General-purpose LLM for text generation, conversation, and queries that don't require specialized agents",
+    "capabilities": ["text-generation", "conversation", "general-qa"],
+    "status": "healthy"
+  },
+  {
+    "id": "adaptive_quiz_master_agent",
+    "name": "Adaptive Quiz Master Agent",
+    "url": "http://adaptive-quiz-agent:5011",
+    "description": "Generates adaptive quizzes tailored to learner's performance. Tracks attempts and adapts difficulty for effective learning.",
+    "capabilities": ["quiz-generation", "assessment", "adaptive-learning"],
+    "status": "offline"
+  },
+  {
+    "id": "assignment_coach_agent",
+    "name": "Assignment Coach Agent",
+    "url": "http://assignment-coach-agent:5012",
+    "description": "Provides assignment understanding, task breakdown, resource suggestions, and progress guidance to students.",
+    "capabilities": ["assignment-help", "task-breakdown", "guidance"],
+    "status": "offline"
+  },
+  {
+    "id": "plagiarism_prevention_agent",
+    "name": "Plagiarism Prevention Agent",
+    "url": "http://plagiarism-agent:5013",
+    "description": "Analyzes text for plagiarism and rephrases content to improve originality while preserving meaning.",
+    "capabilities": ["plagiarism-check", "text-rephrasing", "originality-analysis"],
+    "status": "offline"
+  },
+  {
+    "id": "research_scout_agent",
+    "name": "Research Scout Agent",
+    "url": "http://research-scout-agent:5014",
+    "description": "Helps students find and summarize recent research papers, articles, and case studies on any topic.",
+    "capabilities": ["research", "paper-search", "literature-review"],
+    "status": "offline"
+  },
+  {
+    "id": "concept_reinforcement_agent",
+    "name": "Concept Reinforcement Agent",
+    "url": "http://concept-reinforcement-agent:5015",
+    "description": "Generates focused learning activities for weak topics or when additional practice is needed.",
+    "capabilities": ["practice-generation", "concept-reinforcement", "flashcards"],
+    "status": "offline"
+  },
+  {
+    "id": "citation_manager_agent",
+    "name": "Citation Manager Agent",
+    "url": "http://citation-manager-agent:5016",
+    "description": "Automatically generates, validates, and manages academic citations in various formats (APA, MLA, Chicago).",
+    "capabilities": ["citation-generation", "reference-formatting", "bibliography"],
+    "status": "offline"
+  },
+  {
+    "id": "peer_collaboration_agent",
+    "name": "Peer Collaboration Agent",
+    "url": "http://peer-collaboration-agent:5017",
+    "description": "Monitors team discussions and analyzes collaboration patterns, participation, and communication quality.",
+    "capabilities": ["team-analysis", "collaboration-feedback", "discussion-monitoring"],
+    "status": "offline"
+  },
+  {
+    "id": "adaptive_flashcard_agent",
+    "name": "Adaptive Flashcard Agent",
+    "url": "http://adaptive-flashcard-agent:5018",
+    "description": "Dynamically generates and personalizes flashcards based on student's learning progress and performance.",
+    "capabilities": ["flashcard-generation", "adaptive-learning", "memorization"],
+    "status": "offline"
+  },
+  {
+    "id": "presentation_feedback_agent",
+    "name": "Presentation Feedback Agent",
+    "url": "http://presentation-feedback-agent:5019",
+    "description": "Analyzes presentation transcripts and provides feedback on confidence, material quality, and delivery.",
+    "capabilities": ["presentation-analysis", "speech-feedback", "delivery-coaching"],
+    "status": "offline"
+  },
+  {
+    "id": "lecture_insight_agent",
+    "name": "Lecture Insight Agent",
+    "url": "http://lecture-insight-agent:5020",
+    "description": "Analyzes lecture audio to extract key insights, generate summaries, and suggest learning resources.",
+    "capabilities": ["audio-analysis", "lecture-summarization", "note-generation"],
+    "status": "offline"
+  },
+  {
+    "id": "question_anticipator_agent",
+    "name": "Question Anticipator Agent",
+    "url": "http://question-anticipator-agent:5021",
+    "description": "Predicts possible exam questions based on syllabus, past papers, and historical patterns.",
+    "capabilities": ["exam-prediction", "question-generation", "pattern-analysis"],
+    "status": "offline"
+  },
+  {
+    "id": "daily_revision_proctor_agent",
+    "name": "Daily Revision Proctor Agent",
+    "url": "http://daily-revision-agent:5022",
+    "description": "Monitors daily learning activities, generates reminders, and provides adaptive study recommendations.",
+    "capabilities": ["progress-tracking", "study-reminders", "habit-monitoring"],
+    "status": "offline"
+  },
+  {
+    "id": "study_scheduler_agent",
+    "name": "Study Scheduler Agent",
+    "url": "http://study-scheduler-agent:5023",
+    "description": "Creates and optimizes personalized study timetables based on subjects, deadlines, and performance.",
+    "capabilities": ["schedule-generation", "time-management", "timetable-optimization"],
+    "status": "offline"
+  },
+  {
+    "id": "exam_readiness_agent",
+    "name": "Exam Readiness Agent",
+    "url": "http://exam-readiness-agent:5024",
+    "description": "Generates comprehensive assessments and evaluates student's exam preparation readiness.",
+    "capabilities": ["assessment-generation", "readiness-evaluation", "mock-exams"],
+    "status": "offline"
+  }
+]

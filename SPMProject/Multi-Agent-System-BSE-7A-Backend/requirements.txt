@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+pydantic
+python-jose[cryptography]
+passlib[bcrypt]==1.7.4
+bcrypt==3.2.0
+pyjwt
+httpx
+PyYAML
+pytest
+requests
+aiosqlite
+google-generativeai
+dotenv
+

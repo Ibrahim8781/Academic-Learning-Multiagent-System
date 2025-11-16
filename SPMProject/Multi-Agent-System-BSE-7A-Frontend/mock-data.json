@@ -1,0 +1,38 @@
+{
+  "agents": [
+    {
+      "id": "agent-research",
+      "name": "Research Agent",
+      "description": "Searches and summarizes information from various sources",
+      "capabilities": ["search", "summarize", "analyze", "fact-check"]
+    },
+    {
+      "id": "agent-code",
+      "name": "Code Agent",
+      "description": "Helps with code generation, debugging, and refactoring",
+      "capabilities": ["code-gen", "debug", "refactor", "optimize"]
+    },
+    {
+      "id": "agent-writing",
+      "name": "Writing Agent",
+      "description": "Assists with writing, editing, and proofreading content",
+      "capabilities": ["write", "edit", "proofread", "summarize"]
+    },
+    {
+      "id": "agent-analysis",
+      "name": "Analysis Agent",
+      "description": "Performs data analysis and generates insights",
+      "capabilities": ["analyze", "visualize", "predict", "report"]
+    }
+  ],
+  "sampleRequest": {
+    "agentId": "agent-research",
+    "request": "What are the latest developments in AI?",
+    "autoRoute": false
+  },
+  "sampleResponse": {
+    "response": "Recent developments in AI include advances in large language models, multimodal AI systems, and improved efficiency in model training. Key areas include prompt engineering, fine-tuning techniques, and real-world applications across various industries.",
+    "agentId": "agent-research",
+    "timestamp": "2024-10-24T10:30:00Z"
+  }
+}

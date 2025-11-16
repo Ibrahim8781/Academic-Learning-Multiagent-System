@@ -1,0 +1,42 @@
+services:
+  frontend:
+    build:
+      context: ./Multi-Agent-System-BSE-7A-Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://supervisor:8000
+    networks:
+      - app_network
+    depends_on:
+      - supervisor
+
+  supervisor:
+    build:
+      context: ./Multi-Agent-System-BSE-7A-Backend
+      dockerfile: supervisor/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Multi-Agent-System-BSE-7A-Backend:/app
+    environment:
+      - AGENT_EXTERNAL_HOST=localhost
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    networks:
+      - app_network
+
+  gemini-wrapper:
+    build:
+      context: ./Multi-Agent-System-BSE-7A-Backend
+      dockerfile: agents/gemini_wrapper/Dockerfile
+    ports:
+      - "5010:5010"
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
