@@ -4,8 +4,10 @@ import json
 import os
 from typing import Dict, List, Optional, Tuple
 import google.generativeai as genai
+from pathlib import Path # Ensure this is imported at the top
 
 _logger = logging.getLogger(__name__)
+
 
 # Configure Gemini API
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
@@ -17,7 +19,8 @@ else:
 # Configuration
 CONFIDENCE_THRESHOLD = 0.70  # Minimum confidence to proceed without clarification
 MIN_ACCEPTABLE_CONFIDENCE = 0.50  # Below this, always ask for clarification
-REGISTRY_FILE = "config/registry.json"
+BASE_DIR = Path(__file__).parent.parent
+REGISTRY_FILE = BASE_DIR / "config" / "registry.json"
 
 def load_agent_descriptions_from_registry() -> Dict:
     """
